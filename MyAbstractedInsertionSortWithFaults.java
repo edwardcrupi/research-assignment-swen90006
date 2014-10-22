@@ -20,7 +20,7 @@ public class MyAbstractedInsertionSortWithFaults {
 	public static int[] insert (int upper,int[] input){
         for( int i = upper-1; i>=0; i-- ){
 			if (input[i] =< input[i+1]){
-				input =  exeInsert(i+1, input);
+				input =  exeInsert(i, input);
 			}
 		}
 		return input;
