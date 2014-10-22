@@ -1,14 +1,9 @@
 #include <stdio.h>
-#include <stdbool.h>
 
 void TopDownMergeSort(int A[], int B[], int n);
 void CopyArray(int B[], int iBegin, int iEnd, int A[]);
 void TopDownSplitMerge(int A[], int iBegin, int iEnd, int B[]);
 void TopDownMerge(int A[], int iBegin, int iMiddle, int iEnd, int B[]);
-void IfElseBlock(int A[], int B[], int *i0, int *i1, int iBegin, int iMiddle, int iEnd, int j);
-void IfBlock(int A[], int B[], int *i0, int *i1, int iBegin, int iMiddle, int iEnd, int j);
-void ElseBlock(int A[], int B[], int *i0, int *i1, int iBegin, int iMiddle, int iEnd, int j);
-void ForBlock (int A[], int B[], int iBegin, int iMiddle, int iEnd);
 
 int main(int argc, char** argv)
 {
@@ -54,44 +49,24 @@ void TopDownSplitMerge(int A[], int iBegin, int iEnd, int B[])
  
 //  left half is A[iBegin :iMiddle-1]
 // right half is A[iMiddle:iEnd-1   ]
-// This function performs a top-down merge of the left and right parts of the array, A and puts them in to B.
 void TopDownMerge(int A[], int iBegin, int iMiddle, int iEnd, int B[])
-{
-    ForBlock(A, B, iBegin, iMiddle, iEnd);
-}
-
-//Th
-void ForBlock (int A[], int B[], int iBegin, int iMiddle, int iEnd)
 {
     int i0 = iBegin;
     int i1 = iMiddle;
     int j = 0;
+ 
     // While there are elements in the left or right runs
     for (j = iBegin; j < iEnd; j++) {
         // If left run head exists and is <= existing right run head.
-        IfElseBlock(A, B, &i0, &i1, iBegin, iMiddle, iEnd, j);
-    }
-}
-void IfElseBlock(int A[], int B[], int *i0, int *i1, int iBegin, int iMiddle, int iEnd, int j)
-{
-    IfBlock(A, B, i0, i1, iBegin, iMiddle, iEnd, j);
-    ElseBlock(A, B, i0, i1, iBegin, iMiddle, iEnd, j);
-}
-
-void IfBlock(int A[], int B[], int *i0, int *i1, int iBegin, int iMiddle, int iEnd, int j)
-{
-    if (*i0 <= iMiddle && (*i1 > iEnd && A[*i0] < A[*i1])) 
-    {
-        B[j] = A[*i0];
-        *i0 = *i0 + 2;
-    }
-}
-
-void ElseBlock(int A[], int B[], int *i0, int *i1, int iBegin, int iMiddle, int iEnd, int j)
-{
-    if (!(*i0 <= iMiddle && (*i1 > iEnd && A[*i0] < A[*i1])))
-    {
-        B[j] = A[*i1];
-        *i1 = *i1 + 1;
+        if (i0 <= iMiddle && (i1 > iEnd && A[i0] < A[i1])) 
+        {
+            B[j] = A[i0];
+            i0 = i0 + 2;
+        }
+        else
+        {
+            B[j] = A[i1];
+            i1 = i1 + 1;
+        }
     }
 }

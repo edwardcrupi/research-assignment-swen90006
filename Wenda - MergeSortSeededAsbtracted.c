@@ -54,13 +54,11 @@ void TopDownSplitMerge(int A[], int iBegin, int iEnd, int B[])
  
 //  left half is A[iBegin :iMiddle-1]
 // right half is A[iMiddle:iEnd-1   ]
-// This function performs a top-down merge of the left and right parts of the array, A and puts them in to B.
 void TopDownMerge(int A[], int iBegin, int iMiddle, int iEnd, int B[])
 {
     ForBlock(A, B, iBegin, iMiddle, iEnd);
 }
 
-//Th
 void ForBlock (int A[], int B[], int iBegin, int iMiddle, int iEnd)
 {
     int i0 = iBegin;
