@@ -1,0 +1,3 @@
+(line 5, -, +, "i < arr.length + 1")
+(line 8, +, -, "j=i+1")
+(line 9, <, <=, if "arr[j] < arr[index]")
