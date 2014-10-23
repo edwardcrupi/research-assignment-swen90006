@@ -1,0 +1,42 @@
+<project name="ResearchProject" default="classes">
+    <target name="classes">
+        <mkdir dir="classes" />
+        <javac srcdir="src:test" destdir="classes" 
+            classpath="lib/junit-4.11.jar;lib/hamcrest-core-1.3.jar"
+            includeantruntime="false"/>
+    </target>
+    <target name="clean">
+        <delete dir="classes" />
+    </target>
+
+    <target name="run">
+        <java classname="SelectionDriver" 
+	    classpath="classes/;lib/junit-4.11.jar;lib/hamcrest-core-1.3.jar">
+	</java>
+    </target>
+
+    <target name="abstractedselectiontest" depends="classes">
+        <junit printsummary="yes" fork="yes" haltonfailure="yes">
+	    <classpath>
+                <pathelement path="classes/"/>
+                <pathelement path="lib/junit-4.11.jar"/>
+                <pathelement path="lib/hamcrest-core-1.3.jar"/>
+            </classpath>
+            <formatter type="plain"/>
+            <test name="EdAbstractedSelectionTest"/>
+        </junit>
+    </target>
+
+    <target name="insertiontest" depends="classes">
+        <junit printsummary="yes" fork="yes" haltonfailure="yes">
+        <classpath>
+                <pathelement path="classes/"/>
+                <pathelement path="lib/junit-4.11.jar"/>
+                <pathelement path="lib/hamcrest-core-1.3.jar"/>
+            </classpath>
+            <formatter type="plain"/>
+            <test name="EdInsertionTest"/>
+        </junit>
+    </target>
+
+</project>
