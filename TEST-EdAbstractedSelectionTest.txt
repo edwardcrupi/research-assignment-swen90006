@@ -1,0 +1,107 @@
+Testsuite: EdAbstractedSelectionTest
+Tests run: 24, Failures: 6, Errors: 7, Time elapsed: 0.21 sec
+
+Testcase: manyElementisSmallerElementSwapTest took 0.003 sec
+Testcase: oneElementSwapTest took 0.003 sec
+	Caused an ERROR
+1
+java.lang.ArrayIndexOutOfBoundsException: 1
+	at MySelectionSort.swapElements(Unknown Source)
+	at EdAbstractedSelectionTest.oneElementSwapTest(Unknown Source)
+
+Testcase: manyElementdoSelectionTest took 0 sec
+	Caused an ERROR
+-1
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at MySelectionSort.isSmallerElementSwapIndex(Unknown Source)
+	at MySelectionSort.findSmallestElement(Unknown Source)
+	at MySelectionSort.doSelectionSort(Unknown Source)
+	at EdAbstractedSelectionTest.manyElementdoSelectionTest(Unknown Source)
+
+Testcase: firstArrayElementisSmallerElementSwapTest took 0 sec
+Testcase: mixedArrayElementisSmallerElementSwapTest took 0 sec
+Testcase: firstElementdoSelectionTest took 0 sec
+	Caused an ERROR
+-1
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at MySelectionSort.isSmallerElementSwapIndex(Unknown Source)
+	at MySelectionSort.findSmallestElement(Unknown Source)
+	at MySelectionSort.doSelectionSort(Unknown Source)
+	at EdAbstractedSelectionTest.firstElementdoSelectionTest(Unknown Source)
+
+Testcase: manyElementfindSmallestElementTest took 0 sec
+Testcase: lastElementfindSmallestElementTest took 0 sec
+Testcase: mixedElementdoSelectionTest took 0.001 sec
+	Caused an ERROR
+-1
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at MySelectionSort.isSmallerElementSwapIndex(Unknown Source)
+	at MySelectionSort.findSmallestElement(Unknown Source)
+	at MySelectionSort.doSelectionSort(Unknown Source)
+	at EdAbstractedSelectionTest.mixedElementdoSelectionTest(Unknown Source)
+
+Testcase: zeroElementdoSelectionSortTest took 0 sec
+	Caused an ERROR
+-1
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at MySelectionSort.isSmallerElementSwapIndex(Unknown Source)
+	at MySelectionSort.findSmallestElement(Unknown Source)
+	at MySelectionSort.doSelectionSort(Unknown Source)
+	at EdAbstractedSelectionTest.zeroElementdoSelectionSortTest(Unknown Source)
+
+Testcase: oneElementfindSmallestElementTest took 0 sec
+Testcase: zeroElementSwapTest took 0 sec
+	FAILED
+Expected exception: java.io.IOException
+junit.framework.AssertionFailedError: Expected exception: java.io.IOException
+
+Testcase: firstArrayElementSwapTest took 0.002 sec
+	FAILED
+arrays first differed at element [1]; expected:<5> but was:<6>
+junit.framework.AssertionFailedError: arrays first differed at element [1]; expected:<5> but was:<6>
+	at EdAbstractedSelectionTest.firstArrayElementSwapTest(Unknown Source)
+
+Testcase: manyElementSwapTest took 0 sec
+Testcase: lastElementdoSelectionTest took 0 sec
+	Caused an ERROR
+-1
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at MySelectionSort.isSmallerElementSwapIndex(Unknown Source)
+	at MySelectionSort.findSmallestElement(Unknown Source)
+	at MySelectionSort.doSelectionSort(Unknown Source)
+	at EdAbstractedSelectionTest.lastElementdoSelectionTest(Unknown Source)
+
+Testcase: zeroElementfindSmallestElementTest took 0.002 sec
+	FAILED
+Expected exception: java.io.IOException
+junit.framework.AssertionFailedError: Expected exception: java.io.IOException
+
+Testcase: mixedArrayElementSwapTest took 0.001 sec
+	FAILED
+arrays first differed at element [1]; expected:<5> but was:<6>
+junit.framework.AssertionFailedError: arrays first differed at element [1]; expected:<5> but was:<6>
+	at EdAbstractedSelectionTest.mixedArrayElementSwapTest(Unknown Source)
+
+Testcase: oneElementdoSelectionSortTest took 0 sec
+	Caused an ERROR
+-1
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at MySelectionSort.isSmallerElementSwapIndex(Unknown Source)
+	at MySelectionSort.findSmallestElement(Unknown Source)
+	at MySelectionSort.doSelectionSort(Unknown Source)
+	at EdAbstractedSelectionTest.oneElementdoSelectionSortTest(Unknown Source)
+
+Testcase: lastArrayElementisSmallerElementSwapTest took 0 sec
+Testcase: lastArrayElementSwapTest took 0 sec
+Testcase: zeroElementisSmallerElementSwapTest took 0.001 sec
+	FAILED
+Expected exception: java.io.IOException
+junit.framework.AssertionFailedError: Expected exception: java.io.IOException
+
+Testcase: firstElementfindSmallestElementTest took 0 sec
+Testcase: mixedElementfindSmallestElementTest took 0 sec
+Testcase: oneElementisSmallerElementSwapTest took 0 sec
+	FAILED
+Expected exception: java.io.IOException
+junit.framework.AssertionFailedError: Expected exception: java.io.IOException
+

@@ -12,12 +12,12 @@
     <target name="run">
         <java classname="SelectionDriver" 
 	    classpath="classes/;lib/junit-4.11.jar;lib/hamcrest-core-1.3.jar">
-	</java>
+	   </java>
     </target>
 
     <target name="abstractedselectiontest" depends="classes">
         <junit printsummary="yes" fork="yes" haltonfailure="yes">
-	    <classpath>
+	       <classpath>
                 <pathelement path="classes/"/>
                 <pathelement path="lib/junit-4.11.jar"/>
                 <pathelement path="lib/hamcrest-core-1.3.jar"/>

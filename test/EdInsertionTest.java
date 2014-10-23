@@ -7,8 +7,14 @@ import java.util.Map;
 import org.junit.*;
 import static org.junit.Assert.*;
 
-public class ProjectTest
+public class EdInsertionTest
 {
+  int[] zeroArray = {};
+  int[] oneArray = {8};
+  int[] manyArray = {10,8,4,6,5,1,3,7,2,9};
+  int[] lastArray = {6,5,5,5,5,5,5,5,5,5};
+  int[] firstArray = {5,5,5,5,5,5,5,5,5,6};
+  int[] mixedArray = {5,6,5,6,5,6,5,6,5,6};
   //Any method annotated with "@Before" will be executed before each test,
   //allowing the tester to set up some shared resources.
   @Before
@@ -24,112 +30,47 @@ public class ProjectTest
   }
 
   @Test
-  public void oneLineOneTgt() throws IOException
+  public void zeroTest() throws IOException
   {
-    String file = "Equivalence Partition Tests/oneLineOneTgt.txt";
-    String target = "test";
-    int numMatches = 0;
-    Map<Integer, Integer> count = WordCount.countfile(file, target);
-
-    System.out.println("Word: " + target + "; file " + file);
-    for (Map.Entry<Integer, Integer> entry : count.entrySet()) {
-      System.out.println(entry.getKey() + " -> " + entry.getValue());
-      if (entry.getValue() != 0)
-        numMatches++;
-    }
-
-    assertTrue(numMatches == 1);
+    int[] zeroArray = {};
+    assertArrayEquals(MyNonAbstractedInsertionSortWithFaults.doInsertionSort(zeroArray), zeroArray);
   }
 
   @Test
-  public void oneLineNoTgt() throws IOException
+  public void oneTest() throws IOException
   {
-    String file = "Equivalence Partition Tests/oneLineNoTgt.txt";
-    String target = "test";
-    int numMatches = 0;
-    Map<Integer, Integer> count = WordCount.countfile(file, target);
-
-    System.out.println("Word: " + target + "; file " + file);
-    for (Map.Entry<Integer, Integer> entry : count.entrySet()) {
-      System.out.println(entry.getKey() + " -> " + entry.getValue());
-      if (entry.getValue() != 0)
-        numMatches++;
-    }
-
-    assertTrue(numMatches == 0);
+    int[] oneArray = {8};
+    assertArrayEquals(MyNonAbstractedInsertionSortWithFaults.doInsertionSort(oneArray), oneArray);
   }
 
   @Test
-  public void oneLine10Tgt() throws IOException
+  public void manyTest() throws IOException
   {
-    String file = "Equivalence Partition Tests/oneLineTenTgts.txt";
-    String target = "test";
-    int numMatches = 0;
-    Map<Integer, Integer> count = WordCount.countfile(file, target);
-
-    System.out.println("Word: " + target + "; file " + file);
-    for (Map.Entry<Integer, Integer> entry : count.entrySet()) {
-      System.out.println(entry.getKey() + " -> " + entry.getValue());
-      if (entry.getValue() != 0)
-        numMatches++;
-    }
-
-    assertTrue(numMatches == 10);
+    int[] manyArray = {8};
+    int[] checkArray = {1,2,3,4,5,6,7,8,9,10};
+    assertArrayEquals(MyNonAbstractedInsertionSortWithFaults.doInsertionSort(manyArray), checkArray);
   }
 
   @Test
-  public void hundredLinesOneTgt() throws IOException
+  public void firstTest() throws IOException
   {
-    String file = "Equivalence Partition Tests/100Line1Tgt.txt";
-    String target = "test";
-    int numMatches = 0;
-    Map<Integer, Integer> count = WordCount.countfile(file, target);
-
-    System.out.println("Word: " + target + "; file " + file);
-    for (Map.Entry<Integer, Integer> entry : count.entrySet()) {
-      System.out.println(entry.getKey() + " -> " + entry.getValue());
-      if (entry.getValue() != 0)
-        numMatches++;
-    }
-
-    assertTrue(numMatches == 1);
+    int[] firstArray = {5,5,5,5,5,5,5,5,5,6};
+    assertArrayEquals(MyNonAbstractedInsertionSortWithFaults.doInsertionSort(firstArray), firstArray);
   }
 
   @Test
-  public void hundredLinesTenTgts() throws IOException
+  public void lastTest() throws IOException
   {
-    String file = "Equivalence Partition Tests/100Line10Tgts.txt";
-    String target = "test";
-    int numMatches = 0;
-    Map<Integer, Integer> count = WordCount.countfile(file, target);
-
-    System.out.println("Word: " + target + "; file " + file);
-    for (Map.Entry<Integer, Integer> entry : count.entrySet()) {
-      System.out.println(entry.getKey() + " -> " + entry.getValue());
-      if (entry.getValue() != 0)
-        numMatches++;
-    }
-
-    assertTrue(numMatches == 0);
+    int[] firstArray = {5,5,5,5,5,5,5,5,5,6};
+    int[] lastArray = {6,5,5,5,5,5,5,5,5,5};
+    assertArrayEquals(MyNonAbstractedInsertionSortWithFaults.doInsertionSort(lastArray), firstArray);
   }
 
-  @Test(expected = java.io.IOException.class)
-  public void invalidCharExceptionTest()
-    throws Throwable
+  @Test
+  public void mixedTest() throws IOException
   {
-    String file = "Equivalence Partition Tests/invalidCharTest.txt";
-    String target = "test";
-    Map<Integer, Integer> count = WordCount.countfile(file, target);
-
-  }
-
-  @Test(expected = java.io.IOException.class)
-  public void noFileExceptionTest()
-    throws Throwable
-  {
-    String file = "Equivalence Partition Tests/nonExistantFile.txt";
-    String target = "test";
-    Map<Integer, Integer> count = WordCount.countfile(file, target);
-    
+    int[] mixedArray = {5,6,5,6,5,6,5,6,5,6};
+    int[] checkArray = {5,5,5,5,5,6,6,6,6,6};
+    assertArrayEquals(MyNonAbstractedInsertionSortWithFaults.doInsertionSort(mixedArray), checkArray);
   }
 }

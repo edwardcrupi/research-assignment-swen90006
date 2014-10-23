@@ -1,0 +1,39 @@
+Testsuite: EdInsertionTest
+Tests run: 6, Failures: 0, Errors: 5, Time elapsed: 0.048 sec
+
+Testcase: lastTest took 0.004 sec
+	Caused an ERROR
+10
+java.lang.ArrayIndexOutOfBoundsException: 10
+	at MyNonAbstractedInsertionSortWithFaults.doInsertionSort(Unknown Source)
+	at EdInsertionTest.lastTest(Unknown Source)
+
+Testcase: oneTest took 0 sec
+	Caused an ERROR
+1
+java.lang.ArrayIndexOutOfBoundsException: 1
+	at MyNonAbstractedInsertionSortWithFaults.doInsertionSort(Unknown Source)
+	at EdInsertionTest.oneTest(Unknown Source)
+
+Testcase: firstTest took 0 sec
+	Caused an ERROR
+10
+java.lang.ArrayIndexOutOfBoundsException: 10
+	at MyNonAbstractedInsertionSortWithFaults.doInsertionSort(Unknown Source)
+	at EdInsertionTest.firstTest(Unknown Source)
+
+Testcase: manyTest took 0 sec
+	Caused an ERROR
+1
+java.lang.ArrayIndexOutOfBoundsException: 1
+	at MyNonAbstractedInsertionSortWithFaults.doInsertionSort(Unknown Source)
+	at EdInsertionTest.manyTest(Unknown Source)
+
+Testcase: zeroTest took 0.002 sec
+Testcase: mixedTest took 0 sec
+	Caused an ERROR
+10
+java.lang.ArrayIndexOutOfBoundsException: 10
+	at MyNonAbstractedInsertionSortWithFaults.doInsertionSort(Unknown Source)
+	at EdInsertionTest.mixedTest(Unknown Source)
+
