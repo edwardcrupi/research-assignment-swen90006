@@ -1,15 +1,15 @@
-Testsuite: EdAbstractedSelectionTest
-Tests run: 24, Failures: 6, Errors: 0, Time elapsed: 0.169 sec
+Testsuite: EdAbstractedSelectionTest8
+Tests run: 24, Failures: 6, Errors: 0, Time elapsed: 0.049 sec
 
-Testcase: manyElementisSmallerElementSwapTest took 0.003 sec
-Testcase: oneElementSwapTest took 0.003 sec
+Testcase: manyElementisSmallerElementSwapTest took 0.002 sec
+Testcase: oneElementSwapTest took 0.002 sec
 Testcase: manyElementdoSelectionTest took 0.001 sec
 Testcase: firstArrayElementisSmallerElementSwapTest took 0 sec
 Testcase: mixedArrayElementisSmallerElementSwapTest took 0 sec
 Testcase: firstElementdoSelectionTest took 0 sec
 Testcase: manyElementfindSmallestElementTest took 0 sec
 Testcase: lastElementfindSmallestElementTest took 0 sec
-Testcase: mixedElementdoSelectionTest took 0.001 sec
+Testcase: mixedElementdoSelectionTest took 0 sec
 Testcase: zeroElementdoSelectionSortTest took 0 sec
 Testcase: oneElementfindSmallestElementTest took 0 sec
 Testcase: zeroElementSwapTest took 0.002 sec
@@ -17,11 +17,11 @@ Testcase: zeroElementSwapTest took 0.002 sec
 Expected exception: java.io.IOException
 junit.framework.AssertionFailedError: Expected exception: java.io.IOException
 
-Testcase: firstArrayElementSwapTest took 0 sec
+Testcase: firstArrayElementSwapTest took 0.001 sec
 	FAILED
 arrays first differed at element [1]; expected:<5> but was:<6>
 junit.framework.AssertionFailedError: arrays first differed at element [1]; expected:<5> but was:<6>
-	at EdAbstractedSelectionTest.firstArrayElementSwapTest(Unknown Source)
+	at EdAbstractedSelectionTest8.firstArrayElementSwapTest(Unknown Source)
 
 Testcase: manyElementSwapTest took 0 sec
 Testcase: lastElementdoSelectionTest took 0 sec
@@ -37,7 +37,7 @@ Testcase: lastArrayElementSwapTest took 0.001 sec
 	FAILED
 arrays first differed at element [0]; expected:<6> but was:<5>
 junit.framework.AssertionFailedError: arrays first differed at element [0]; expected:<6> but was:<5>
-	at EdAbstractedSelectionTest.lastArrayElementSwapTest(Unknown Source)
+	at EdAbstractedSelectionTest8.lastArrayElementSwapTest(Unknown Source)
 
 Testcase: zeroElementisSmallerElementSwapTest took 0 sec
 	FAILED

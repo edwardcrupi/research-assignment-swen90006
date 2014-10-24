@@ -1,9 +1,10 @@
-//Original File
-public class MySelectionSort {
+
+//Error introduced in to line 32: should be ```for (int i = 0; i < arr.length - 1; i++)```
+public class MySelectionSort8 {
 
     public static int[] doSelectionSort(int[] arr){
         
-        for (int i = 0; i < arr.length - 1; i++)
+        for (int i = 0; i <= arr.length - 1; i++)
         {
             int index = i;
             

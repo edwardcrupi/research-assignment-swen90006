@@ -1,5 +1,6 @@
-//Original File
-public class MySelectionSort {
+
+//Error introduced in to line 32: should be ```elements[index1] = elements[index2];```
+public class MySelectionSort6 {
 
     public static int[] doSelectionSort(int[] arr){
         
@@ -28,7 +29,7 @@ public class MySelectionSort {
     
     public static int[] swapElements(int[] elements, int index1, int index2){
         int smallerNumber = elements[index1];  
-        elements[index1] = elements[index2];
+        elements[index1] += elements[index2];
         elements[index2] = smallerNumber;
     	return elements;
     }

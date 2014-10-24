@@ -27,15 +27,255 @@
         </junit>
     </target>
 
-    <target name="insertiontest" depends="classes">
+    <target name="abstractedselectiontest1" depends="classes">
         <junit printsummary="yes" fork="yes" haltonfailure="yes">
-        <classpath>
+           <classpath>
                 <pathelement path="classes/"/>
                 <pathelement path="lib/junit-4.11.jar"/>
                 <pathelement path="lib/hamcrest-core-1.3.jar"/>
             </classpath>
             <formatter type="plain"/>
-            <test name="EdInsertionTest"/>
+            <test name="EdAbstractedSelectionTest1"/>
+        </junit>
+    </target>
+
+    <target name="abstractedselectiontest2" depends="classes">
+        <junit printsummary="yes" fork="yes" haltonfailure="yes">
+           <classpath>
+                <pathelement path="classes/"/>
+                <pathelement path="lib/junit-4.11.jar"/>
+                <pathelement path="lib/hamcrest-core-1.3.jar"/>
+            </classpath>
+            <formatter type="plain"/>
+            <test name="EdAbstractedSelectionTest2"/>
+        </junit>
+    </target>
+
+    <target name="abstractedselectiontest3" depends="classes">
+        <junit printsummary="yes" fork="yes" haltonfailure="yes">
+           <classpath>
+                <pathelement path="classes/"/>
+                <pathelement path="lib/junit-4.11.jar"/>
+                <pathelement path="lib/hamcrest-core-1.3.jar"/>
+            </classpath>
+            <formatter type="plain"/>
+            <test name="EdAbstractedSelectionTest3"/>
+        </junit>
+    </target>
+
+    <target name="abstractedselectiontest4" depends="classes">
+        <junit printsummary="yes" fork="yes" haltonfailure="yes">
+           <classpath>
+                <pathelement path="classes/"/>
+                <pathelement path="lib/junit-4.11.jar"/>
+                <pathelement path="lib/hamcrest-core-1.3.jar"/>
+            </classpath>
+            <formatter type="plain"/>
+            <test name="EdAbstractedSelectionTest4"/>
+        </junit>
+    </target>
+
+    <target name="abstractedselectiontest5" depends="classes">
+        <junit printsummary="yes" fork="yes" haltonfailure="yes">
+           <classpath>
+                <pathelement path="classes/"/>
+                <pathelement path="lib/junit-4.11.jar"/>
+                <pathelement path="lib/hamcrest-core-1.3.jar"/>
+            </classpath>
+            <formatter type="plain"/>
+            <test name="EdAbstractedSelectionTest5"/>
+        </junit>
+    </target>
+
+    <target name="abstractedselectiontest6" depends="classes">
+        <junit printsummary="yes" fork="yes" haltonfailure="yes">
+           <classpath>
+                <pathelement path="classes/"/>
+                <pathelement path="lib/junit-4.11.jar"/>
+                <pathelement path="lib/hamcrest-core-1.3.jar"/>
+            </classpath>
+            <formatter type="plain"/>
+            <test name="EdAbstractedSelectionTest6"/>
+        </junit>
+    </target>
+
+    <target name="abstractedselectiontest7" depends="classes">
+        <junit printsummary="yes" fork="yes" haltonfailure="yes">
+           <classpath>
+                <pathelement path="classes/"/>
+                <pathelement path="lib/junit-4.11.jar"/>
+                <pathelement path="lib/hamcrest-core-1.3.jar"/>
+            </classpath>
+            <formatter type="plain"/>
+            <test name="EdAbstractedSelectionTest7"/>
+        </junit>
+    </target>
+
+    <target name="abstractedselectiontest8" depends="classes">
+        <junit printsummary="yes" fork="yes" haltonfailure="yes">
+           <classpath>
+                <pathelement path="classes/"/>
+                <pathelement path="lib/junit-4.11.jar"/>
+                <pathelement path="lib/hamcrest-core-1.3.jar"/>
+            </classpath>
+            <formatter type="plain"/>
+            <test name="EdAbstractedSelectionTest8"/>
+        </junit>
+    </target>
+
+    <target name="abstractedselectiontest9" depends="classes">
+        <junit printsummary="yes" fork="yes" haltonfailure="yes">
+           <classpath>
+                <pathelement path="classes/"/>
+                <pathelement path="lib/junit-4.11.jar"/>
+                <pathelement path="lib/hamcrest-core-1.3.jar"/>
+            </classpath>
+            <formatter type="plain"/>
+            <test name="EdAbstractedSelectionTest10"/>
+        </junit>
+    </target>
+
+    <target name="abstractedselectiontest10" depends="classes">
+        <junit printsummary="yes" fork="yes" haltonfailure="yes">
+           <classpath>
+                <pathelement path="classes/"/>
+                <pathelement path="lib/junit-4.11.jar"/>
+                <pathelement path="lib/hamcrest-core-1.3.jar"/>
+            </classpath>
+            <formatter type="plain"/>
+            <test name="EdAbstractedSelectionTest10"/>
+        </junit>
+    </target>
+
+    <target name="origselectiontest" depends="classes">
+        <junit printsummary="yes" fork="yes" haltonfailure="yes">
+           <classpath>
+                <pathelement path="classes/"/>
+                <pathelement path="lib/junit-4.11.jar"/>
+                <pathelement path="lib/hamcrest-core-1.3.jar"/>
+            </classpath>
+            <formatter type="plain"/>
+            <test name="EdOrigSelectionTest"/>
+        </junit>
+    </target>
+
+    <target name="origselectiontest1" depends="classes">
+        <junit printsummary="yes" fork="yes" haltonfailure="yes">
+           <classpath>
+                <pathelement path="classes/"/>
+                <pathelement path="lib/junit-4.11.jar"/>
+                <pathelement path="lib/hamcrest-core-1.3.jar"/>
+            </classpath>
+            <formatter type="plain"/>
+            <test name="EdOrigSelectionTest1"/>
+        </junit>
+    </target>
+
+    <target name="origselectiontest2" depends="classes">
+        <junit printsummary="yes" fork="yes" haltonfailure="yes">
+           <classpath>
+                <pathelement path="classes/"/>
+                <pathelement path="lib/junit-4.11.jar"/>
+                <pathelement path="lib/hamcrest-core-1.3.jar"/>
+            </classpath>
+            <formatter type="plain"/>
+            <test name="EdOrigSelectionTest2"/>
+        </junit>
+    </target>
+
+    <target name="origselectiontest3" depends="classes">
+        <junit printsummary="yes" fork="yes" haltonfailure="yes">
+           <classpath>
+                <pathelement path="classes/"/>
+                <pathelement path="lib/junit-4.11.jar"/>
+                <pathelement path="lib/hamcrest-core-1.3.jar"/>
+            </classpath>
+            <formatter type="plain"/>
+            <test name="EdOrigSelectionTest3"/>
+        </junit>
+    </target>
+
+    <target name="origselectiontest4" depends="classes">
+        <junit printsummary="yes" fork="yes" haltonfailure="yes">
+           <classpath>
+                <pathelement path="classes/"/>
+                <pathelement path="lib/junit-4.11.jar"/>
+                <pathelement path="lib/hamcrest-core-1.3.jar"/>
+            </classpath>
+            <formatter type="plain"/>
+            <test name="EdOrigSelectionTest4"/>
+        </junit>
+    </target>
+
+    <target name="origselectiontest5" depends="classes">
+        <junit printsummary="yes" fork="yes" haltonfailure="yes">
+           <classpath>
+                <pathelement path="classes/"/>
+                <pathelement path="lib/junit-4.11.jar"/>
+                <pathelement path="lib/hamcrest-core-1.3.jar"/>
+            </classpath>
+            <formatter type="plain"/>
+            <test name="EdOrigSelectionTest5"/>
+        </junit>
+    </target>
+
+    <target name="origselectiontest6" depends="classes">
+        <junit printsummary="yes" fork="yes" haltonfailure="yes">
+           <classpath>
+                <pathelement path="classes/"/>
+                <pathelement path="lib/junit-4.11.jar"/>
+                <pathelement path="lib/hamcrest-core-1.3.jar"/>
+            </classpath>
+            <formatter type="plain"/>
+            <test name="EdOrigSelectionTest6"/>
+        </junit>
+    </target>
+
+    <target name="origselectiontest7" depends="classes">
+        <junit printsummary="yes" fork="yes" haltonfailure="yes">
+           <classpath>
+                <pathelement path="classes/"/>
+                <pathelement path="lib/junit-4.11.jar"/>
+                <pathelement path="lib/hamcrest-core-1.3.jar"/>
+            </classpath>
+            <formatter type="plain"/>
+            <test name="EdOrigSelectionTest7"/>
+        </junit>
+    </target>
+
+    <target name="origselectiontest8" depends="classes">
+        <junit printsummary="yes" fork="yes" haltonfailure="yes">
+           <classpath>
+                <pathelement path="classes/"/>
+                <pathelement path="lib/junit-4.11.jar"/>
+                <pathelement path="lib/hamcrest-core-1.3.jar"/>
+            </classpath>
+            <formatter type="plain"/>
+            <test name="EdOrigSelectionTest8"/>
+        </junit>
+    </target>
+
+    <target name="origselectiontest9" depends="classes">
+        <junit printsummary="yes" fork="yes" haltonfailure="yes">
+           <classpath>
+                <pathelement path="classes/"/>
+                <pathelement path="lib/junit-4.11.jar"/>
+                <pathelement path="lib/hamcrest-core-1.3.jar"/>
+            </classpath>
+            <formatter type="plain"/>
+            <test name="EdOrigSelectionTest9"/>
+        </junit>
+    </target>
+
+    <target name="origselectiontest10" depends="classes">
+        <junit printsummary="yes" fork="yes" haltonfailure="yes">
+           <classpath>
+                <pathelement path="classes/"/>
+                <pathelement path="lib/junit-4.11.jar"/>
+                <pathelement path="lib/hamcrest-core-1.3.jar"/>
+            </classpath>
+            <formatter type="plain"/>
+            <test name="EdOrigSelectionTest10"/>
         </junit>
     </target>
 

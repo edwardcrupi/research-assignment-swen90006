@@ -1,5 +1,6 @@
-//Original File
-public class MySelectionSort {
+
+//Error introduced in to line 25: should be ```if (elements[currentIndex] < elements[index])```
+public class MySelectionSort2 {
 
     public static int[] doSelectionSort(int[] arr){
         
@@ -21,7 +22,7 @@ public class MySelectionSort {
     }
     
     public static int isSmallerElementSwapIndex(int[] elements, int currentIndex, int index){
-        if (elements[currentIndex] < elements[index]) 
+        if (elements[currentIndex] > elements[index]) 
             index = currentIndex;
         return index;
     }

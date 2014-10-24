@@ -1,5 +1,6 @@
-//Original File
-public class MySelectionSort {
+
+//Error introduced in to line 19: should be ```for (int j = startPosition + 1; j < elements.length; j++)```
+public class MySelectionSort5 {
 
     public static int[] doSelectionSort(int[] arr){
         
@@ -15,7 +16,7 @@ public class MySelectionSort {
     }
     
     public static int findSmallestElement(int[] elements, int index, int startPosition){
-        for (int j = startPosition + 1; j < elements.length; j++)
+        for (int j = startPosition + 1; j > elements.length; j++)
         	index = isSmallerElementSwapIndex(elements, j, index);
         return index;
     }
