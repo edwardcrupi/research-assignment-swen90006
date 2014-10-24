@@ -1,5 +1,5 @@
 Testsuite: EdAbstractedSelectionTest5
-Tests run: 24, Failures: 9, Errors: 0, Time elapsed: 0.046 sec
+Tests run: 24, Failures: 9, Errors: 0, Time elapsed: 0.045 sec
 
 Testcase: manyElementisSmallerElementSwapTest took 0.002 sec
 Testcase: oneElementSwapTest took 0.002 sec
@@ -21,20 +21,20 @@ junit.framework.AssertionFailedError: arrays first differed at element [1]; expe
 	at EdAbstractedSelectionTest5.mixedElementdoSelectionTest(Unknown Source)
 
 Testcase: zeroElementdoSelectionSortTest took 0 sec
-Testcase: oneElementfindSmallestElementTest took 0 sec
+Testcase: oneElementfindSmallestElementTest took 0.001 sec
 Testcase: zeroElementSwapTest took 0 sec
 	FAILED
 Expected exception: java.io.IOException
 junit.framework.AssertionFailedError: Expected exception: java.io.IOException
 
-Testcase: firstArrayElementSwapTest took 0.001 sec
+Testcase: firstArrayElementSwapTest took 0 sec
 	FAILED
 arrays first differed at element [1]; expected:<5> but was:<6>
 junit.framework.AssertionFailedError: arrays first differed at element [1]; expected:<5> but was:<6>
 	at EdAbstractedSelectionTest5.firstArrayElementSwapTest(Unknown Source)
 
 Testcase: manyElementSwapTest took 0 sec
-Testcase: lastElementdoSelectionTest took 0.001 sec
+Testcase: lastElementdoSelectionTest took 0 sec
 	FAILED
 arrays first differed at element [0]; expected:<5> but was:<6>
 junit.framework.AssertionFailedError: arrays first differed at element [0]; expected:<5> but was:<6>
@@ -46,9 +46,9 @@ Expected exception: java.io.IOException
 junit.framework.AssertionFailedError: Expected exception: java.io.IOException
 
 Testcase: mixedArrayElementSwapTest took 0 sec
-Testcase: oneElementdoSelectionSortTest took 0.001 sec
+Testcase: oneElementdoSelectionSortTest took 0 sec
 Testcase: lastArrayElementisSmallerElementSwapTest took 0 sec
-Testcase: lastArrayElementSwapTest took 0 sec
+Testcase: lastArrayElementSwapTest took 0.001 sec
 	FAILED
 arrays first differed at element [0]; expected:<6> but was:<5>
 junit.framework.AssertionFailedError: arrays first differed at element [0]; expected:<6> but was:<5>
@@ -59,7 +59,7 @@ Testcase: zeroElementisSmallerElementSwapTest took 0 sec
 Expected exception: java.io.IOException
 junit.framework.AssertionFailedError: Expected exception: java.io.IOException
 
-Testcase: firstElementfindSmallestElementTest took 0.001 sec
+Testcase: firstElementfindSmallestElementTest took 0 sec
 Testcase: mixedElementfindSmallestElementTest took 0 sec
 Testcase: oneElementisSmallerElementSwapTest took 0 sec
 	FAILED

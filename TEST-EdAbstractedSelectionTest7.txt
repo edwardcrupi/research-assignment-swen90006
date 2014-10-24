@@ -9,12 +9,12 @@ arrays first differed at element [3]; expected:<5> but was:<4>
 junit.framework.AssertionFailedError: arrays first differed at element [3]; expected:<5> but was:<4>
 	at EdAbstractedSelectionTest7.manyElementdoSelectionTest(Unknown Source)
 
-Testcase: firstArrayElementisSmallerElementSwapTest took 0.001 sec
+Testcase: firstArrayElementisSmallerElementSwapTest took 0 sec
 Testcase: mixedArrayElementisSmallerElementSwapTest took 0 sec
-Testcase: firstElementdoSelectionTest took 0.001 sec
+Testcase: firstElementdoSelectionTest took 0 sec
 Testcase: manyElementfindSmallestElementTest took 0 sec
-Testcase: lastElementfindSmallestElementTest took 0.001 sec
-Testcase: mixedElementdoSelectionTest took 0 sec
+Testcase: lastElementfindSmallestElementTest took 0 sec
+Testcase: mixedElementdoSelectionTest took 0.001 sec
 	FAILED
 arrays first differed at element [8]; expected:<21> but was:<6>
 junit.framework.AssertionFailedError: arrays first differed at element [8]; expected:<21> but was:<6>
@@ -33,7 +33,7 @@ arrays first differed at element [0]; expected:<10> but was:<5>
 junit.framework.AssertionFailedError: arrays first differed at element [0]; expected:<10> but was:<5>
 	at EdAbstractedSelectionTest7.firstArrayElementSwapTest(Unknown Source)
 
-Testcase: manyElementSwapTest took 0.001 sec
+Testcase: manyElementSwapTest took 0 sec
 	FAILED
 arrays first differed at element [1]; expected:<12> but was:<4>
 junit.framework.AssertionFailedError: arrays first differed at element [1]; expected:<12> but was:<4>
@@ -64,7 +64,7 @@ arrays first differed at element [0]; expected:<6> but was:<5>
 junit.framework.AssertionFailedError: arrays first differed at element [0]; expected:<6> but was:<5>
 	at EdAbstractedSelectionTest7.lastArrayElementSwapTest(Unknown Source)
 
-Testcase: zeroElementisSmallerElementSwapTest took 0 sec
+Testcase: zeroElementisSmallerElementSwapTest took 0.001 sec
 	FAILED
 Expected exception: java.io.IOException
 junit.framework.AssertionFailedError: Expected exception: java.io.IOException

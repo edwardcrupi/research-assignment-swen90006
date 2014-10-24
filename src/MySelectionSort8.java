@@ -1,5 +1,5 @@
 
-//Error introduced in to line 32: should be ```for (int i = 0; i < arr.length - 1; i++)```
+//Error introduced in to line 7: should be ```for (int i = 0; i < arr.length - 1; i++)```
 public class MySelectionSort8 {
 
     public static int[] doSelectionSort(int[] arr){

@@ -1,14 +1,14 @@
 Testsuite: EdOrigSelectionTest6
-Tests run: 6, Failures: 3, Errors: 0, Time elapsed: 0.031 sec
+Tests run: 6, Failures: 3, Errors: 0, Time elapsed: 0.045 sec
 
-Testcase: manyElementdoSelectionTest took 0.004 sec
+Testcase: manyElementdoSelectionTest took 0.027 sec
 	FAILED
 arrays first differed at element [0]; expected:<20> but was:<1>
 junit.framework.AssertionFailedError: arrays first differed at element [0]; expected:<20> but was:<1>
 	at EdOrigSelectionTest6.manyElementdoSelectionTest(Unknown Source)
 
 Testcase: firstElementdoSelectionTest took 0 sec
-Testcase: mixedElementdoSelectionTest took 0.001 sec
+Testcase: mixedElementdoSelectionTest took 0 sec
 	FAILED
 arrays first differed at element [0]; expected:<10> but was:<5>
 junit.framework.AssertionFailedError: arrays first differed at element [0]; expected:<10> but was:<5>

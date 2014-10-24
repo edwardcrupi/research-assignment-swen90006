@@ -1,7 +1,7 @@
 Testsuite: EdOrigSelectionTest8
-Tests run: 6, Failures: 3, Errors: 0, Time elapsed: 0.025 sec
+Tests run: 6, Failures: 3, Errors: 0, Time elapsed: 0.056 sec
 
-Testcase: manyElementdoSelectionTest took 0.006 sec
+Testcase: manyElementdoSelectionTest took 0.036 sec
 	FAILED
 arrays first differed at element [0]; expected:<10> but was:<1>
 junit.framework.AssertionFailedError: arrays first differed at element [0]; expected:<10> but was:<1>
@@ -15,7 +15,7 @@ junit.framework.AssertionFailedError: arrays first differed at element [1]; expe
 	at EdOrigSelectionTest8.mixedElementdoSelectionTest(Unknown Source)
 
 Testcase: zeroElementdoSelectionSortTest took 0 sec
-Testcase: lastElementdoSelectionTest took 0.001 sec
+Testcase: lastElementdoSelectionTest took 0 sec
 	FAILED
 arrays first differed at element [0]; expected:<5> but was:<6>
 junit.framework.AssertionFailedError: arrays first differed at element [0]; expected:<5> but was:<6>

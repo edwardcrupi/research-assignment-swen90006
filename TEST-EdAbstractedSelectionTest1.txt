@@ -1,10 +1,10 @@
 Testsuite: EdAbstractedSelectionTest1
-Tests run: 24, Failures: 6, Errors: 0, Time elapsed: 0.043 sec
+Tests run: 24, Failures: 6, Errors: 0, Time elapsed: 0.148 sec
 
 Testcase: manyElementisSmallerElementSwapTest took 0.001 sec
 Testcase: oneElementSwapTest took 0.002 sec
 Testcase: manyElementdoSelectionTest took 0.001 sec
-Testcase: firstArrayElementisSmallerElementSwapTest took 0 sec
+Testcase: firstArrayElementisSmallerElementSwapTest took 0.001 sec
 Testcase: mixedArrayElementisSmallerElementSwapTest took 0 sec
 Testcase: firstElementdoSelectionTest took 0 sec
 Testcase: manyElementfindSmallestElementTest took 0 sec
@@ -12,7 +12,7 @@ Testcase: lastElementfindSmallestElementTest took 0 sec
 Testcase: mixedElementdoSelectionTest took 0 sec
 Testcase: zeroElementdoSelectionSortTest took 0 sec
 Testcase: oneElementfindSmallestElementTest took 0 sec
-Testcase: zeroElementSwapTest took 0.002 sec
+Testcase: zeroElementSwapTest took 0.003 sec
 	FAILED
 Expected exception: java.io.IOException
 junit.framework.AssertionFailedError: Expected exception: java.io.IOException
@@ -24,8 +24,8 @@ junit.framework.AssertionFailedError: arrays first differed at element [1]; expe
 	at EdAbstractedSelectionTest1.firstArrayElementSwapTest(Unknown Source)
 
 Testcase: manyElementSwapTest took 0 sec
-Testcase: lastElementdoSelectionTest took 0 sec
-Testcase: zeroElementfindSmallestElementTest took 0.002 sec
+Testcase: lastElementdoSelectionTest took 0.001 sec
+Testcase: zeroElementfindSmallestElementTest took 0.001 sec
 	FAILED
 Expected exception: java.io.IOException
 junit.framework.AssertionFailedError: Expected exception: java.io.IOException
@@ -39,13 +39,13 @@ arrays first differed at element [0]; expected:<6> but was:<5>
 junit.framework.AssertionFailedError: arrays first differed at element [0]; expected:<6> but was:<5>
 	at EdAbstractedSelectionTest1.lastArrayElementSwapTest(Unknown Source)
 
-Testcase: zeroElementisSmallerElementSwapTest took 0.001 sec
+Testcase: zeroElementisSmallerElementSwapTest took 0 sec
 	FAILED
 Expected exception: java.io.IOException
 junit.framework.AssertionFailedError: Expected exception: java.io.IOException
 
 Testcase: firstElementfindSmallestElementTest took 0 sec
-Testcase: mixedElementfindSmallestElementTest took 0.001 sec
+Testcase: mixedElementfindSmallestElementTest took 0 sec
 Testcase: oneElementisSmallerElementSwapTest took 0 sec
 	FAILED
 Expected exception: java.io.IOException

@@ -1,9 +1,9 @@
 Testsuite: EdAbstractedSelectionTest10
-Tests run: 24, Failures: 6, Errors: 6, Time elapsed: 0.044 sec
+Tests run: 24, Failures: 6, Errors: 6, Time elapsed: 2.043 sec
 
-Testcase: manyElementisSmallerElementSwapTest took 0.001 sec
-Testcase: oneElementSwapTest took 0.002 sec
-Testcase: manyElementdoSelectionTest took 0.002 sec
+Testcase: manyElementisSmallerElementSwapTest took 0.002 sec
+Testcase: oneElementSwapTest took 0.077 sec
+Testcase: manyElementdoSelectionTest took 0.005 sec
 	Caused an ERROR
 10
 java.lang.ArrayIndexOutOfBoundsException: 10
@@ -39,13 +39,13 @@ java.lang.ArrayIndexOutOfBoundsException: 0
 	at MySelectionSort10.doSelectionSort(Unknown Source)
 	at EdAbstractedSelectionTest10.zeroElementdoSelectionSortTest(Unknown Source)
 
-Testcase: oneElementfindSmallestElementTest took 0 sec
-Testcase: zeroElementSwapTest took 0 sec
+Testcase: oneElementfindSmallestElementTest took 0.001 sec
+Testcase: zeroElementSwapTest took 0.001 sec
 	FAILED
 Expected exception: java.io.IOException
 junit.framework.AssertionFailedError: Expected exception: java.io.IOException
 
-Testcase: firstArrayElementSwapTest took 0 sec
+Testcase: firstArrayElementSwapTest took 0.002 sec
 	FAILED
 arrays first differed at element [1]; expected:<5> but was:<6>
 junit.framework.AssertionFailedError: arrays first differed at element [1]; expected:<5> but was:<6>

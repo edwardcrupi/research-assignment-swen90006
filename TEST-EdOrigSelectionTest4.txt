@@ -1,7 +1,7 @@
 Testsuite: EdOrigSelectionTest4
-Tests run: 6, Failures: 0, Errors: 4, Time elapsed: 0.021 sec
+Tests run: 6, Failures: 0, Errors: 4, Time elapsed: 0.026 sec
 
-Testcase: manyElementdoSelectionTest took 0.003 sec
+Testcase: manyElementdoSelectionTest took 0.005 sec
 	Caused an ERROR
 10
 java.lang.ArrayIndexOutOfBoundsException: 10
@@ -22,7 +22,7 @@ java.lang.ArrayIndexOutOfBoundsException: 10
 	at MySelectionSortOrig4.doSelectionSort(Unknown Source)
 	at EdOrigSelectionTest4.mixedElementdoSelectionTest(Unknown Source)
 
-Testcase: zeroElementdoSelectionSortTest took 0.001 sec
+Testcase: zeroElementdoSelectionSortTest took 0.002 sec
 Testcase: lastElementdoSelectionTest took 0 sec
 	Caused an ERROR
 10
