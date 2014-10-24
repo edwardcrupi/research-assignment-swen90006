@@ -1,0 +1,45 @@
+Testsuite: EdOrigSelectionTest10
+Tests run: 6, Failures: 0, Errors: 6, Time elapsed: 0.026 sec
+
+Testcase: manyElementdoSelectionTest took 0.004 sec
+	Caused an ERROR
+11
+java.lang.ArrayIndexOutOfBoundsException: 11
+	at MySelectionSortOrig10.doSelectionSort(Unknown Source)
+	at EdOrigSelectionTest10.manyElementdoSelectionTest(Unknown Source)
+
+Testcase: firstElementdoSelectionTest took 0 sec
+	Caused an ERROR
+11
+java.lang.ArrayIndexOutOfBoundsException: 11
+	at MySelectionSortOrig10.doSelectionSort(Unknown Source)
+	at EdOrigSelectionTest10.firstElementdoSelectionTest(Unknown Source)
+
+Testcase: mixedElementdoSelectionTest took 0 sec
+	Caused an ERROR
+11
+java.lang.ArrayIndexOutOfBoundsException: 11
+	at MySelectionSortOrig10.doSelectionSort(Unknown Source)
+	at EdOrigSelectionTest10.mixedElementdoSelectionTest(Unknown Source)
+
+Testcase: zeroElementdoSelectionSortTest took 0 sec
+	Caused an ERROR
+1
+java.lang.ArrayIndexOutOfBoundsException: 1
+	at MySelectionSortOrig10.doSelectionSort(Unknown Source)
+	at EdOrigSelectionTest10.zeroElementdoSelectionSortTest(Unknown Source)
+
+Testcase: lastElementdoSelectionTest took 0 sec
+	Caused an ERROR
+11
+java.lang.ArrayIndexOutOfBoundsException: 11
+	at MySelectionSortOrig10.doSelectionSort(Unknown Source)
+	at EdOrigSelectionTest10.lastElementdoSelectionTest(Unknown Source)
+
+Testcase: oneElementdoSelectionSortTest took 0 sec
+	Caused an ERROR
+2
+java.lang.ArrayIndexOutOfBoundsException: 2
+	at MySelectionSortOrig10.doSelectionSort(Unknown Source)
+	at EdOrigSelectionTest10.oneElementdoSelectionSortTest(Unknown Source)
+

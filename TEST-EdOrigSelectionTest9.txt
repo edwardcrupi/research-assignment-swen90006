@@ -1,0 +1,30 @@
+Testsuite: EdOrigSelectionTest9
+Tests run: 6, Failures: 3, Errors: 1, Time elapsed: 0.025 sec
+
+Testcase: manyElementdoSelectionTest took 0.004 sec
+	FAILED
+arrays first differed at element [0]; expected:<10> but was:<1>
+junit.framework.AssertionFailedError: arrays first differed at element [0]; expected:<10> but was:<1>
+	at EdOrigSelectionTest9.manyElementdoSelectionTest(Unknown Source)
+
+Testcase: firstElementdoSelectionTest took 0 sec
+Testcase: mixedElementdoSelectionTest took 0 sec
+	FAILED
+arrays first differed at element [1]; expected:<6> but was:<5>
+junit.framework.AssertionFailedError: arrays first differed at element [1]; expected:<6> but was:<5>
+	at EdOrigSelectionTest9.mixedElementdoSelectionTest(Unknown Source)
+
+Testcase: zeroElementdoSelectionSortTest took 0 sec
+	Caused an ERROR
+1
+java.lang.ArrayIndexOutOfBoundsException: 1
+	at MySelectionSortOrig9.doSelectionSort(Unknown Source)
+	at EdOrigSelectionTest9.zeroElementdoSelectionSortTest(Unknown Source)
+
+Testcase: lastElementdoSelectionTest took 0 sec
+	FAILED
+arrays first differed at element [0]; expected:<5> but was:<6>
+junit.framework.AssertionFailedError: arrays first differed at element [0]; expected:<5> but was:<6>
+	at EdOrigSelectionTest9.lastElementdoSelectionTest(Unknown Source)
+
+Testcase: oneElementdoSelectionSortTest took 0 sec

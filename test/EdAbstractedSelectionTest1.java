@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import org.junit.*;
 import static org.junit.Assert.*;
 
-public class EdAbstractedSelectionTest
+public class EdAbstractedSelectionTest1
 {
 
   //Any method annotated with "@Before" will be executed before each test,
@@ -28,7 +28,7 @@ public class EdAbstractedSelectionTest
     int[] zeroArray = {};
     //the assertTrue method is used to check whether something holds
     int[] checkArray = {};
-    MySelectionSort.doSelectionSort(zeroArray);
+    MySelectionSort1.doSelectionSort(zeroArray);
     assertArrayEquals(zeroArray, checkArray);
   }
 
@@ -38,7 +38,7 @@ public class EdAbstractedSelectionTest
     int[] oneArray = {8};
     //the assertTrue method is used to check whether something holds
     int[] checkArray = {8};
-    MySelectionSort.doSelectionSort(oneArray);
+    MySelectionSort1.doSelectionSort(oneArray);
     assertArrayEquals(oneArray, checkArray);
   }
 
@@ -46,7 +46,7 @@ public class EdAbstractedSelectionTest
   public void manyElementdoSelectionTest()
   {
     int[] manyArray = {10,8,4,6,5,1,3,7,2,9};
-    MySelectionSort.doSelectionSort(manyArray);
+    MySelectionSort1.doSelectionSort(manyArray);
     int[] checkArray = {1,2,3,4,5,6,7,8,9,10};
     assertArrayEquals(manyArray, checkArray);
   }
@@ -55,7 +55,7 @@ public class EdAbstractedSelectionTest
   public void firstElementdoSelectionTest()
   {
     int[] firstArray = {5,5,5,5,5,5,5,5,5,6};
-    MySelectionSort.doSelectionSort(firstArray);
+    MySelectionSort1.doSelectionSort(firstArray);
     assertArrayEquals(firstArray, firstArray);
   }
 
@@ -64,7 +64,7 @@ public class EdAbstractedSelectionTest
   {
     int[] firstArray = {5,5,5,5,5,5,5,5,5,6};
     int[] lastArray = {6,5,5,5,5,5,5,5,5,5};
-    MySelectionSort.doSelectionSort(lastArray);
+    MySelectionSort1.doSelectionSort(lastArray);
     assertArrayEquals(firstArray, lastArray);
   }
 
@@ -72,7 +72,7 @@ public class EdAbstractedSelectionTest
   public void mixedElementdoSelectionTest()
   {
     int[] mixedArray = {5,6,5,6,5,6,5,6,5,6};
-    MySelectionSort.doSelectionSort(mixedArray);
+    MySelectionSort1.doSelectionSort(mixedArray);
     int[] checkArray = {5,5,5,5,5,6,6,6,6,6};
     assertArrayEquals(mixedArray, checkArray);
   }
@@ -81,7 +81,7 @@ public class EdAbstractedSelectionTest
   public void zeroElementfindSmallestElementTest() throws Throwable
   {
     int[] zeroArray = {};
-    assert(MySelectionSort.findSmallestElement(zeroArray, 1, 1) == 0);
+    assert(MySelectionSort1.findSmallestElement(zeroArray, 1, 1) == 0);
   }
 
   @Test
@@ -89,21 +89,21 @@ public class EdAbstractedSelectionTest
   {
     int[] oneArray = {8};
     //the assertTrue method i;s used to check whether something holds
-    assert(MySelectionSort.findSmallestElement(oneArray, 1, 1)==8);
+    assert(MySelectionSort1.findSmallestElement(oneArray, 1, 1)==8);
   }
 
   @Test
   public void manyElementfindSmallestElementTest()
   {
     int[] manyArray = {10,8,4,6,5,1,3,7,2,9};
-    assert(MySelectionSort.findSmallestElement(manyArray, 1, 1)==0);
+    assert(MySelectionSort1.findSmallestElement(manyArray, 1, 1)==0);
   }
 
   @Test
   public void firstElementfindSmallestElementTest()
   {
     int[] firstArray = {5,5,5,5,5,5,5,5,5,6};
-    assert(MySelectionSort.findSmallestElement(firstArray, 1, 1)==8 || MySelectionSort.findSmallestElement(firstArray, 1, 1)==0);
+    assert(MySelectionSort1.findSmallestElement(firstArray, 1, 1)==8 || MySelectionSort1.findSmallestElement(firstArray, 1, 1)==0);
   }
 
   @Test
@@ -111,7 +111,7 @@ public class EdAbstractedSelectionTest
   {
     int[] lastArray = {6,5,5,5,5,5,5,5,5,5};
     int[] firstArray = {5,5,5,5,5,5,5,5,5,6};
-    assert(MySelectionSort.findSmallestElement(lastArray, 1, 1)==1 || MySelectionSort.findSmallestElement(firstArray, 1, 1)==9);
+    assert(MySelectionSort1.findSmallestElement(lastArray, 1, 1)==1 || MySelectionSort1.findSmallestElement(firstArray, 1, 1)==9);
   }
 
   @Test
@@ -119,14 +119,14 @@ public class EdAbstractedSelectionTest
   {
     int[] mixedArray = {5,6,5,6,5,6,5,6,5,6};
     int[] firstArray = {5,5,5,5,5,5,5,5,5,6};
-    assert(MySelectionSort.findSmallestElement(mixedArray, 1, 1)==0 || MySelectionSort.findSmallestElement(firstArray, 1, 1)==8);
+    assert(MySelectionSort1.findSmallestElement(mixedArray, 1, 1)==0 || MySelectionSort1.findSmallestElement(firstArray, 1, 1)==8);
   }
 
   @Test (expected = java.io.IOException.class)
   public void zeroElementisSmallerElementSwapTest() throws Throwable
   {
     int[] zeroArray = {};
-    assert(MySelectionSort.isSmallerElementSwapIndex(zeroArray, 1, 1) == 0);
+    assert(MySelectionSort1.isSmallerElementSwapIndex(zeroArray, 1, 1) == 0);
   }
 
   @Test (expected = java.io.IOException.class)
@@ -134,42 +134,42 @@ public class EdAbstractedSelectionTest
   {
     int[] oneArray = {8};
     //the assertTrue method i;s used to check whether something holds
-    assert(MySelectionSort.isSmallerElementSwapIndex(oneArray, 0, 0)==0);
+    assert(MySelectionSort1.isSmallerElementSwapIndex(oneArray, 0, 0)==0);
   }
 
   @Test
   public void manyElementisSmallerElementSwapTest()
   {
     int[] manyArray = {10,8,4,6,5,1,3,7,2,9};
-    assert(MySelectionSort.isSmallerElementSwapIndex(manyArray, 1, 2)==1);
+    assert(MySelectionSort1.isSmallerElementSwapIndex(manyArray, 1, 2)==1);
   }
 
   @Test
   public void firstArrayElementisSmallerElementSwapTest()
   {
     int[] firstArray = {5,5,5,5,5,5,5,5,5,6};
-    assert(MySelectionSort.isSmallerElementSwapIndex(firstArray, 0, 1)==0);
+    assert(MySelectionSort1.isSmallerElementSwapIndex(firstArray, 0, 1)==0);
   }
 
   @Test
   public void lastArrayElementisSmallerElementSwapTest()
   {
     int[] lastArray = {6,5,5,5,5,5,5,5,5,5};
-    assert(MySelectionSort.isSmallerElementSwapIndex(lastArray, 8, 9)==8);
+    assert(MySelectionSort1.isSmallerElementSwapIndex(lastArray, 8, 9)==8);
   }
 
   @Test
   public void mixedArrayElementisSmallerElementSwapTest()
   {
     int[] mixedArray = {5,6,5,6,5,6,5,6,5,6};
-    assert(MySelectionSort.isSmallerElementSwapIndex(mixedArray, 1, 2)==2);
+    assert(MySelectionSort1.isSmallerElementSwapIndex(mixedArray, 1, 2)==2);
   }
 
   @Test (expected = java.io.IOException.class)
   public void zeroElementSwapTest() throws Throwable
   {
     int[] zeroArray = {};
-    assert(MySelectionSort.swapElements(zeroArray, 0, 0) == zeroArray);
+    assert(MySelectionSort1.swapElements(zeroArray, 0, 0) == zeroArray);
   }
 
   @Test
@@ -179,13 +179,13 @@ public class EdAbstractedSelectionTest
     //the assertTrue method i;s used to check whether something holds
     assertArrayEquals(MySelectionSort.swapElements(oneArray, 0, 0), oneArray);
   }
-
+  
   @Test
   public void manyElementSwapTest()
   {
     int[] manyArray = {10,8,4,6,5,1,3,7,2,9};
     int[] checkArray = {10,4,8,6,5,1,3,7,2,9};
-    assertArrayEquals(MySelectionSort.swapElements(manyArray, 1, 2), checkArray);
+    assertArrayEquals(MySelectionSort1.swapElements(manyArray, 1, 2), checkArray);
   }
 
   @Test
@@ -193,7 +193,7 @@ public class EdAbstractedSelectionTest
   {
     int[] firstArray = {5,5,5,5,5,5,5,5,5,6};
     int[] checkArray = {5,6,5,5,5,5,5,5,5,5};
-    assertArrayEquals(MySelectionSort.swapElements(firstArray, 0, 1), checkArray);
+    assertArrayEquals(MySelectionSort1.swapElements(firstArray, 0, 1), checkArray);
   }
 
   @Test
@@ -201,7 +201,7 @@ public class EdAbstractedSelectionTest
   {
     int[] lastArray = {6,5,5,5,5,5,5,5,5,5};
     int[] checkArray = {5,5,5,5,5,5,5,5,6,5};
-    assertArrayEquals(MySelectionSort.swapElements(lastArray, 8, 9), checkArray);
+    assertArrayEquals(MySelectionSort1.swapElements(lastArray, 8, 9), checkArray);
   }
 
   @Test
@@ -209,7 +209,7 @@ public class EdAbstractedSelectionTest
   {
     int[] mixedArray = {5,6,5,6,5,6,5,6,5,6};
     int[] checkArray = {5,6,5,6,5,6,5,6,6,5};
-    assertArrayEquals(MySelectionSort.swapElements(mixedArray, 8, 9), checkArray);
+    assertArrayEquals(MySelectionSort1.swapElements(mixedArray, 8, 9), checkArray);
   }
 
 }

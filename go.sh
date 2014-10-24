@@ -1,0 +1,23 @@
+ant abstractedselectiontest
+ant abstractedselectiontest1
+ant abstractedselectiontest2
+ant abstractedselectiontest3
+ant abstractedselectiontest4
+ant abstractedselectiontest5
+ant abstractedselectiontest6
+ant abstractedselectiontest7
+ant abstractedselectiontest8
+ant abstractedselectiontest9
+ant abstractedselectiontest10
+
+ant origselectiontest
+ant origselectiontest1
+ant origselectiontest2
+ant origselectiontest3
+ant origselectiontest4
+ant origselectiontest5
+ant origselectiontest6
+ant origselectiontest7
+ant origselectiontest8
+ant origselectiontest9
+ant origselectiontest10

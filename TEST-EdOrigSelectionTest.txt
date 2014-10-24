@@ -1,0 +1,9 @@
+Testsuite: EdOrigSelectionTest
+Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.019 sec
+
+Testcase: manyElementdoSelectionTest took 0.003 sec
+Testcase: firstElementdoSelectionTest took 0 sec
+Testcase: mixedElementdoSelectionTest took 0 sec
+Testcase: zeroElementdoSelectionSortTest took 0 sec
+Testcase: lastElementdoSelectionTest took 0 sec
+Testcase: oneElementdoSelectionSortTest took 0 sec
