@@ -22,7 +22,6 @@ public class MyAbstractedBubbleSortWithFaults {
     }
     
     private static int[] swapNumbers(int i, int j, int[] array) {
-  
         int temp;
         temp = array[i];
         array[i] = array[j];

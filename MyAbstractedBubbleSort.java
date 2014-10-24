@@ -20,9 +20,8 @@ public class MyAbstractedBubbleSort {
     	}
     	return array;
     }
-    
+    // array.length > j && array.length > i
     private static int[] swapNumbers(int i, int j, int[] array) {
-  
         int temp;
         temp = array[i];
         array[i] = array[j];
